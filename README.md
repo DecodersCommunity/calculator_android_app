@@ -28,7 +28,7 @@ Do star the Decoder's repository ✨✨✨
 
 A simple Calculator application made using JAVA and XML.
 
-Made with the intention of guiding beginner contributors towards open source, this respositoy is going to be maintained by: [Ishita Gupta](https://github.com/ishita1521)
+Made with the intention of guiding beginner contributors towards open source, this respository is going to be maintained by: [Ishita Gupta](https://github.com/ishita1521)
 
 ## How to Contribute?
 
