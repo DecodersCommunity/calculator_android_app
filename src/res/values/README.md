@@ -4,7 +4,7 @@ Folder structure:
 
 ```
 ./values/
-      |- color.xml        <--- Contains color attributes of the application
+      |- colors.xml        <--- Contains color attributes of the application
       |- strings.xml      <--- Contains string attributes of the application
       |- themes.xml       <--- Contains theme attributes of the application
 ```
