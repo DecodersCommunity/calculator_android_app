@@ -8,25 +8,35 @@
     android:onClick="home"
     tools:context=".Maths_tools_page">
 
-
-    <ScrollView
+<ScrollView
         android:layout_width="match_parent"
-
         android:layout_height="match_parent"
-        android:layout_marginTop="174dp"
+        android:layout_marginTop="100dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_screen">
 
-
-
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="590dp">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:onClick="quadeqn"
+                android:text="Solve the problems of:"
+                android:textColor="@color/black"
+                android:textSize="28dp" />
 
             <TextView
                 android:id="@+id/textView23"
