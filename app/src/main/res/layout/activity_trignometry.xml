@@ -72,7 +72,8 @@
         android:layout_height="90dp"
         android:layout_marginLeft="10dp"
         android:gravity="center|left"
-        android:textColor="@color/white"
+        android:background="@color/white"
+        android:textColor="@color/black"
         android:textSize="30dp" />
 
 
@@ -98,6 +99,7 @@
     <RadioGroup
         android:id="@+id/groupradio"
         android:layout_width="fill_parent"
+        android:layout_marginLeft="30dp"
         android:layout_height="wrap_content">
 
         <!-- In RadioGroup create the 1 Radio Button-->
