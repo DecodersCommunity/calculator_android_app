@@ -1,50 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".Quadratic_Equation">
+    tools:context=".TempConvertor">
 
     <TextView
-        android:id="@+id/home_screen1"
+        android:id="@+id/home_screen"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:onClick="temp_home"
         android:foreground="@drawable/home"
-        android:layout_alignParentStart="true"
-        android:padding="50dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <TextView
+        android:id="@+id/retry1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:foreground="@drawable/ic_baseline_refresh_24"
+        android:onClick="temp_refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002" />
 
     <TextView
         android:id="@+id/textView200"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginBottom="557dp"
         android:gravity="center"
-        android:text="Enter the coefficent to obtain the required roots (ax²+bx+c=0)"
+        android:text="@string/celsius_fahrenheit"
         android:fontFamily="@font/dm_sans_medium"
         android:textColor="@color/white"
         android:textSize="24sp"
-        android:layout_below="@id/home_screen1" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
 
     <TextView
         android:id="@+id/textView37"
         android:layout_width="match_parent"
         android:layout_height="175dp"
         android:textSize="20dp"
-        android:gravity="center|left"
+        android:gravity="center"
         android:layout_marginLeft="10dp"
         android:textColor="@color/white"
-        android:layout_below="@id/textView200" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView200"
+        app:layout_constraintVertical_bias="0.035" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="398dp"
+        android:foregroundGravity="bottom|center"
+        android:gravity="bottom|center"
         android:orientation="horizontal"
-        android:layout_below="@id/textView37"
-        android:layout_above="@id/button">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75">
 
         <EditText
+           android:layout_marginEnd="15sp"
+            android:layout_marginStart="15sp"
             android:id="@+id/editTextNumberSigned"
             android:layout_width="160dp"
             android:layout_height="150dp"
@@ -55,8 +92,8 @@
             android:baselineAligned="true"
             android:ems="10"
             android:foregroundGravity="bottom"
-            android:gravity="center_vertical"
-            android:hint="@string/cofficent_of_a"
+            android:gravity="center"
+            android:hint="@string/celsius"
             android:textColorHint="@color/white"
             android:fontFamily="@font/dm_sans"
             android:inputType="numberSigned|numberDecimal"
@@ -64,6 +101,9 @@
             android:textSize="25dp" />
 
         <EditText
+            android:layout_marginEnd="15sp"
+            android:layout_marginStart="15sp"
+            android:gravity="center"
             android:id="@+id/editTextNumberSigned2"
             android:layout_width="160dp"
             android:layout_height="150dp"
@@ -74,28 +114,14 @@
             android:baselineAligned="false"
             android:ems="10"
             android:foregroundGravity="bottom"
-            android:hint="@string/cofficent_of_b"
+            android:hint="@string/Fahrenheit"
             android:inputType="numberSigned|numberDecimal"
             android:textColorHint="@color/white"
             android:fontFamily="@font/dm_sans"
             android:paddingLeft="7sp"
             android:textSize="25dp" />
 
-        <EditText
-            android:id="@+id/editTextNumberSigned3"
-            android:layout_width="160dp"
-            android:layout_height="150dp"
-            android:layout_marginHorizontal="2dp"
-            android:layout_weight="1"
-            android:background="@drawable/box_design"
-            android:baselineAligned="false"
-            android:ems="10"
-            android:hint="@string/cofficent_of_c"
-            android:inputType="numberSigned|numberDecimal"
-            android:textColorHint="@color/white"
-            android:fontFamily="@font/dm_sans"
-            android:paddingLeft="7sp"
-            android:textSize="25dp" />
+
     </LinearLayout>
 
     <Button
@@ -107,24 +133,17 @@
         android:background="@drawable/button_design2"
         android:foregroundGravity="center"
         android:gravity="center"
+        android:onClick="temp_result"
         android:shadowColor="@color/purple_500"
         android:text="@string/submit"
         android:fontFamily="@font/dm_sans_bold"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="25sp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.84000003" />
 
-
-    <TextView
-        android:id="@+id/retry1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:foreground="@drawable/ic_baseline_refresh_24"
-        android:onClick="retry1"
-        android:layout_alignParentEnd="true"
-        android:padding="50dp"/>
-    
-    
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

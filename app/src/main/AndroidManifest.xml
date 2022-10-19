@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Calculator"
         tools:targetApi="31">
         <activity
+            android:name=".TempConvertor"
+            android:exported="false" />
+        <activity
             android:name=".TrignometryActivity"
             android:exported="false" />
         <activity

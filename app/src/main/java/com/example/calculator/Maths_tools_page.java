@@ -39,4 +39,9 @@ public class Maths_tools_page extends AppCompatActivity {
         Intent intent = new Intent(this,TrignometryActivity.class);
         startActivity(intent);
     }
+
+    public void TempClick(View view){
+        Intent intent = new Intent(this,TempConvertor.class);
+        startActivity(intent);
+    }
 }

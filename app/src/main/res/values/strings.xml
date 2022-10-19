@@ -29,4 +29,12 @@
     <string name="cofficent_of_b"><small>Coefficent \n of x</small></string>
     <string name="submit">Submit</string>
     <string name="cofficent_of_c"><small>Constant</small></string>
+    <string name="temperature">Temperature</string>
+    <string name="celsius">℃</string>
+    <string name="Fahrenheit">°F</string>
+    <string name="celsius_fahrenheit">Enter the Temperature and get temperature in celsius or fahrenheit</string>
+    <string name="quadratic_equation">Quadratic Equation</string>
+    <string name="log_calculation">Log Calculation</string>
+    <string name="linear_equation_2_variables">Linear Equation 2 variables</string>
+    <string name="trigonometry">Trigonometry</string>
 </resources>
