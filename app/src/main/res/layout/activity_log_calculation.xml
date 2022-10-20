@@ -51,7 +51,7 @@
         <EditText
             android:id="@+id/editTextNumberSignedvalue"
             android:layout_width="130dp"
-            android:layout_height="150dp"
+            android:layout_height="140dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_weight="1"

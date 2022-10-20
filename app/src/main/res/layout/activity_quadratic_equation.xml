@@ -30,7 +30,7 @@
         android:id="@+id/textView37"
         android:layout_width="match_parent"
         android:layout_height="175dp"
-        android:textSize="20dp"
+        android:textSize="21dp"
         android:gravity="center|left"
         android:layout_marginLeft="10dp"
         android:textColor="@color/white"
@@ -46,8 +46,8 @@
 
         <EditText
             android:id="@+id/editTextNumberSigned"
-            android:layout_width="160dp"
-            android:layout_height="150dp"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
             android:layout_gravity="bottom"
             android:layout_marginHorizontal="2dp"
             android:layout_weight="1"
