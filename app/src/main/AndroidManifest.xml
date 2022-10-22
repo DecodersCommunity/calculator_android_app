@@ -4,6 +4,7 @@
     package="com.example.calculator">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -31,6 +32,10 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Quadratic_Equation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".currency_converter"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

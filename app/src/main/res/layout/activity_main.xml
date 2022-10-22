@@ -459,8 +459,9 @@
 
     <View
         android:id="@+id/divider"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_margin="5dp"
         android:background="@color/underline"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
         app:layout_constraintEnd_toEndOf="parent"
