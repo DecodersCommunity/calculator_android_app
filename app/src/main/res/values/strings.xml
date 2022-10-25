@@ -37,4 +37,23 @@
     <string name="log_calculation">Log Calculation</string>
     <string name="linear_equation_2_variables">Linear Equation 2 variables</string>
     <string name="trigonometry">Trigonometry</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="from_currency">From currency</string>
+    <string name="to_currency">To Currency</string>
+    <string-array name="currency">
+        <item>INR (Indian Rupee)</item>
+        <item>USD (United States Dollar)</item>
+        <item>CHF (Swiss Franc)</item>
+        <item>GBP (British Pound)</item>
+        <item>GIP (Gibraltar Pound)</item>
+        <item>KYD (Caymanian Dollar)</item>
+        <item>JOD (Jordanian Dinar)</item>
+        <item>KWD (Kuwaiti Dinar)</item>
+        <item>PKR (Pakistani Rupee)</item>
+        <item>CNY (Chinese Yuan)</item>
+        <item>BDT (Bangladeshi Taka)</item>
+        <item>NPR (Nepalese Rupee)</item>
+        <item>LKR (Sri Lankan rupee)</item>
+    </string-array>
 </resources>

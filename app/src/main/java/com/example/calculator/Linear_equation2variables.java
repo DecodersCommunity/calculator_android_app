@@ -70,9 +70,9 @@ public class Linear_equation2variables extends AppCompatActivity {
                     float x=0;
                     float y=0;
                     x=(b1*c2-c1*b2)/(a1*b2-a2*b1);
-                    x= Math.round(x*100)/100;
+
                     y=(c1*a2-c2*a1)/(a1*b2-a2*b1);
-                    y= Math.round(y*100)/100;
+
                     result.setText("value of x= "+x+" ,\n"+"value of y= "+y);
 
                 }
